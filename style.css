@@ -276,6 +276,10 @@ a:hover {
   width: 48%;
 }
 
+.about-card-list-item {
+  border: var(--bd-style);
+}
+
 .contact {
   background: var(--bg-linear);
 }
