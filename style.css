@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid #f73;
+  /* outline: 1px solid #f73; */
 }
 
 
@@ -307,26 +307,26 @@ a:hover {
 
 .contact {
   background: var(--bg-linear);
+
+  >.container {
+    padding-top: 129px;
+    padding-bottom: 129px;
+
+    gap: 113px;
+  }
 }
 
-.contact>.container {
-  padding-top: 129px;
-  padding-bottom: 129px;
+.sns-icon-list-item {
+  & img {
+    width: 162px;
+    height: 162px;
 
-  gap: 113px;
-}
+    border-radius: 40px;
+  }
 
-.sns-icon-list-item img {
-  width: 162px;
-  height: 162px;
-
-  border-radius: 40px;
-}
-
-.sns-icon-list-item:hover {
-  border-radius: 40px;
-
-  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.90), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  & :hover {
+    box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.90), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
 }
 
 /* end of contact */
