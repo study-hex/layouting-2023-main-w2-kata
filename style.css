@@ -28,6 +28,16 @@
   --txt-2xs: 16px;
 }
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--color-nightSky);
+  background: var(--color-primary);
+}
+
+::selection {
+  color: var(--color-nightSky);
+  background: var(--color-primary);
+}
 
 html,
 body {
@@ -266,10 +276,20 @@ a:hover {
 
 .nav-list {
   gap: 61px;
+
+  >li:hover {
+    filter: drop-shadow(16px 8px 4px var(--color-primary));
+  }
+}
+
+.nav-list>li:hover, .footer a:hover {
+  color: var(--color-primary);
 }
 
 .btn-contact:hover {
   background: var(--color-primary);
+  box-shadow: -2px -2px 2px 1px var(--color-primary);
+  filter: drop-shadow(2px 2px 2px var(--color-primary));
 }
 
 /* end of header */
@@ -303,6 +323,10 @@ a:hover {
   border: var(--bd-style);
 }
 
+.about-card-list>li:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 /* end of about */
 
 .contact {
@@ -331,8 +355,64 @@ a:hover {
 
 /* end of contact */
 
+.btn-more-info:hover {
+  color: var(--color-primary);
+  transform: scale(1.02);
+}
+
 /* .btn-more-info {
   margin-top: 76px;
 } */
 
 /* end of project */
+
+
+.contact-txt .material-symbols-outlined {
+  animation: shake 0.9s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(5px);
+  }
+
+  40% {
+    transform: translateX(-5px);
+  }
+
+  60% {
+    transform: translateX(4px);
+  }
+
+  80% {
+    transform: translateX(-4px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.btn>.material-symbols-outlined {
+  animation: bounceRight 0.8s infinite;
+}
+
+@keyframes bounceRight {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  50% {
+    transform: translateY(-2px) translateX(2px);
+  }
+
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+/* end of animation */
