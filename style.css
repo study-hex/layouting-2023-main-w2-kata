@@ -196,6 +196,9 @@ a:hover {
 
 /* end of base */
 
+.h-full {
+  height: 100%;
+}
 
 .inline-flex {
   display: inline-flex;
@@ -271,7 +274,10 @@ a:hover {
 }
 
 .sparkle, .photographer {
-  width: 196px;
+  /* width: 196px; */
+  width: calc(196 / 746 * 100%);
+  /* QQ */
+  /* height: 100%; */
 }
 
 /* end of intro */
