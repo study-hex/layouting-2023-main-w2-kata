@@ -134,6 +134,10 @@ a:hover {
   margin-bottom: 36px;
 }
 
+.mt-auto {
+  margin-top: auto;
+}
+
 .gap-4 {
   gap: 16px;
 }
@@ -196,9 +200,14 @@ a:hover {
 
 /* end of base */
 
+.w-fit {
+  width: fit-content;
+}
+
 .h-full {
   height: 100%;
 }
+
 
 .inline-flex {
   display: inline-flex;
@@ -322,8 +331,8 @@ a:hover {
 
 /* end of contact */
 
-.btn-more-info {
+/* .btn-more-info {
   margin-top: 76px;
-}
+} */
 
 /* end of project */
