@@ -62,8 +62,6 @@
           </span></a>
       </section>
     </div>
-
-
   </header>
 
   <main>
@@ -188,11 +186,9 @@
             </a>
           </li>
         </ul>
-
       </div>
-      </div>
-      <!-- end of contact -->
     </section>
+    <!-- end of contact -->
 
     <section class="project py-40 theme-white">
       <div class="container flex flex-col align-end">
@@ -209,20 +205,31 @@
                 src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/Rectangle 15.png"
                 alt="project-15" class="project-15" />
 
-              <div class="flex flex-col">
+              <!-- #NOTES: 
+                該區塊的 align-items 屬性預設值會是 stretch，
+                因此會延伸到整個區塊空間，按鈕才會變成滿版的，
+                所以更改為 `flex-start`
+              -->
+              <div class="flex flex-col items-start">
                 <p>
                   I've worked on a variety of websites, including e-commerce
                   sites, blogs, and landing pages. I take pride in creating
                   clean, efficient, and user-friendly code.
                 </p>
 
-                <!-- QQ -->
-                <a href="https://www.hexschool.com/courses/web-layout-training-1st.html"
+                <!-- <a href="https://www.hexschool.com/courses/web-layout-training-1st.html"
                   target="_blank"
                   class="btn btn-more-info inline-flex w-fit mt-auto py-3 px-6 align-center theme-black border-radius-8">SEE
                   MORE<span class="ml-2 material-symbols-outlined">
                     arrow_outward
+                  </span></a> -->
+                <a href="https://www.hexschool.com/courses/web-layout-training-1st.html"
+                  target="_blank"
+                  class="btn btn-more-info inline-flex mt-auto py-3 px-6 align-center theme-black border-radius-8">SEE
+                  MORE<span class="ml-2 material-symbols-outlined">
+                    arrow_outward
                   </span></a>
+
               </div>
             </div>
             <!-- end of project-info -->
