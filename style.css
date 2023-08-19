@@ -265,6 +265,10 @@ a:hover {
   align-items: end;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 
 .text-center {
   text-align: center;
@@ -316,10 +320,10 @@ a:hover {
   width: 57%;
 }
 
+/* #NOTES: 以寬度比例為主 */
 .sparkle, .photographer {
-  /* width: 196px; */
   width: calc(196 / 746 * 100%);
-  /* QQ */
+  /* width: 196px; */
   /* height: 100%; */
 }
 
