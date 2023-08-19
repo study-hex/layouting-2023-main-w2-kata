@@ -16,6 +16,10 @@
 
 > <https://youtu.be/pqv0wGFOU88>
 
+- W7
+
+> <https://rpg.hexschool.com/task/352/show>
+
 ---
 
 ## 練習
@@ -25,3 +29,7 @@
 - background-image
 
 - container
+
+### W7
+
+- AOS
